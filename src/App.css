@@ -1,0 +1,14 @@
+#root {
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  min-height: 100%;
+  color: #4f4f4f;
+  background-color: #FBFCFD;
+}
