@@ -24,11 +24,11 @@ const ActionButtons = ({ record, onEdit, onDelete }: ActionButtonsProps) => {
 				onClick={() => onEdit(record)}
 			/>
 			<Popconfirm
-				title="Удалить запись?"
-				description="Вы уверены, что хотите удалить эту запись?"
+				title="Delete record?"
+				description="Are you sure you want to delete this record?"
 				onConfirm={() => onDelete(record.key)}
-				okText="Да"
-				cancelText="Нет"
+				okText="Yes"
+				cancelText="No"
 			>
 				<Button
 					type="primary"

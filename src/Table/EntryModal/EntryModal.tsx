@@ -30,12 +30,12 @@ const EntryModal = ({
 }: EntryModalProps) => {
 	return (
 		<Modal
-			title={editingRecord ? 'Редактировать запись' : 'Добавить запись'}
+			title={editingRecord ? 'Edit Record' : 'Add Record'}
 			open={isVisible}
 			onOk={onOk}
 			onCancel={onCancel}
-			okText="Сохранить"
-			cancelText="Отмена"
+			okText="Save"
+			cancelText="Cancel"
 		>
 			<Form
 				form={form}
@@ -44,40 +44,40 @@ const EntryModal = ({
 			>
 				<Form.Item
 					name="name"
-					label="Имя"
+					label="Name"
 					rules={[
-						{ required: true, message: 'Пожалуйста, введите имя!' },
-						{ min: 2, message: 'Имя должно содержать минимум 2 символа!' }
+						{ required: true, message: 'Please enter a name!' },
+						{ min: 2, message: 'Name must contain at least 2 characters!' }
 					]}
 				>
-					<Input placeholder="Введите имя" />
+					<Input placeholder="Enter name" />
 				</Form.Item>
 
 				<Form.Item
 					name="date"
-					label="Дата"
+					label="Date"
 					rules={[
-						{ required: true, message: 'Пожалуйста, выберите дату!' }
+						{ required: true, message: 'Please select a date!' }
 					]}
 				>
 					<DatePicker
 						style={{ width: '100%' }}
-						placeholder="Выберите дату"
+						placeholder="Select date"
 						format="YYYY-MM-DD"
 					/>
 				</Form.Item>
 
 				<Form.Item
 					name="value"
-					label="Числовое значение"
+					label="Numeric Value"
 					rules={[
-						{ required: true, message: 'Пожалуйста, введите числовое значение!' },
-						{ type: 'number', min: 0, message: 'Значение должно быть положительным!' }
+						{ required: true, message: 'Please enter a numeric value!' },
+						{ type: 'number', min: 0, message: 'Value must be positive!' }
 					]}
 				>
 					<InputNumber
 						style={{ width: '100%' }}
-						placeholder="Введите числовое значение"
+						placeholder="Enter numeric value"
 						min={0}
 					/>
 				</Form.Item>

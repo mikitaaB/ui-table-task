@@ -11,7 +11,7 @@ export const createTableColumns = (
 	{ onEdit, onDelete }: TableColumnsProps
 ): ColumnsType<DataType> => [
 		{
-			title: 'Имя',
+			title: 'Name',
 			dataIndex: 'name',
 			key: 'name',
 			width: '40%',
@@ -19,7 +19,7 @@ export const createTableColumns = (
 			sortDirections: ['ascend', 'descend']
 		},
 		{
-			title: 'Дата',
+			title: 'Date',
 			dataIndex: 'date',
 			key: 'date',
 			width: '40%',
@@ -27,7 +27,7 @@ export const createTableColumns = (
 			sortDirections: ['ascend', 'descend']
 		},
 		{
-			title: 'Числовое значение',
+			title: 'Numeric Value',
 			dataIndex: 'value',
 			key: 'value',
 			width: '20%',
@@ -35,7 +35,7 @@ export const createTableColumns = (
 			sortDirections: ['ascend', 'descend']
 		},
 		{
-			title: 'Действия',
+			title: 'Actions',
 			key: 'actions',
 			width: '10%',
 			render: (_, record) => (

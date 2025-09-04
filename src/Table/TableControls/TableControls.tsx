@@ -29,10 +29,10 @@ const TableControls = ({ onAdd, onSearch, searchValue }: TableControlsProps) => 
 				icon={<PlusOutlined />}
 				onClick={onAdd}
 			>
-				{"Добавить"}
+				{"Add"}
 			</Button>
 			<Input.Search
-				placeholder={"Поиск по всем полям..."}
+				placeholder={"Search in all fields..."}
 				defaultValue={searchValue}
 				onChange={handleSearchChange}
 				style={{ width: 300 }}

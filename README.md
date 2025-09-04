@@ -25,4 +25,4 @@ yarn build
 yarn preview
 ```
 
-The app will be available at http://localhost:4173/calc.
+The app will be available at http://localhost:4173/ui-table-task/.
